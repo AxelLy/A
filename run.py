@@ -44,13 +44,22 @@ tarifs = {  "titre1":"titre page","titre2":"titre2","texte1":"texte","texte2":"t
 "texte3":"texte","bouton1":"bouton","img1":"1.jpg","img2":"2.jpg","img3":"3.jpg","texte7":"texte","texte8":"texte","texte9":"texte"
 }
 
-dico = {"liste1":[1,2,3],"liste2":[3,2,1]}
-
-my_liste=[["titre1",[['amamamam',['brrrr','dswds','dsw']],
-                     ['eaeae',['ish ish']],
-                     ['przrzr',['oeoeoe']]]],
-          ["titre2",[['v',['a']],['b',['v ish','r']]]],
-          ["titre3",[['c',['p']],['d',['v a','n']]]]]
+my_liste=[["Onglerie",[['Beauté des mains et des pieds',["Manucure…………………………………………………………………….22€",
+"Spa des mains (manucure avec gommage,masque)……..35€",
+"Soins paraffine ajouté à un soins……………………………………9€",
+"Pose de vernis (couleur/french)……………………………………35€",
+"Beauté des pieds………………………………………………………….29€",
+"Spa des pieds………………………………………………………………48€",
+"Vernis semi-permanent(mains ou pieds………………………27€",
+"Dépose seule………………………………………………………………..9€",
+"Soin Calluspeeling®……………………………………………………..49€"]],
+                    ['Prothésie ongulaire',['ish ish']],
+                    ['Décos',['oeoeoe']]]],
+          ["Beauté du regard",[['Regard',['a']],
+                    ['Maquillage miss W',['v ish','r']]]],
+          ["Maquilage Permanent",[['Lèvres',['p']],
+                    ['Sourcils',['v a','n']],
+                    ['Yeux',['v a','n']]]]]
 
 @app.route("/")
 def template_test():
@@ -71,8 +80,7 @@ def prestations():
 
 @app.route("/rubrique4")
 def tarif():
-    return render_template('Ttarifs.html',my_list=['rubrique1','rubrique2','rubrique3','rubrique4'],my_list2=["1","2"],my_list3=["1","2","3"],
-    base = laBase,tarifs = tarifs, dico = dico, contact = lecontact)
+    return render_template('Ttarifs.html', base = laBase,tarifs = tarifs, contact = lecontact, my_liste = my_liste)
 
 
 @app.route("/rubrique5")
