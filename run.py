@@ -46,6 +46,12 @@ tarifs = {  "titre1":"titre page","titre2":"titre2","texte1":"texte","texte2":"t
 
 dico = {"liste1":[1,2,3],"liste2":[3,2,1]}
 
+my_liste=[["titre1",[['amamamam',['brrrr','dswds','dsw']],
+                     ['eaeae',['ish ish']],
+                     ['przrzr',['oeoeoe']]]],
+          ["titre2",[['v',['a']],['b',['v ish','r']]]],
+          ["titre3",[['c',['p']],['d',['v a','n']]]]]
+
 @app.route("/")
 def template_test():
     return render_template('Taccueil.html', base = laBase, marque = lesmarques, contact = lecontact, accueil = leaccueil, prestations = lesprestations)
