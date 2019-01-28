@@ -95,7 +95,7 @@ def prestations():
 
 @app.route("/rubrique4")
 def tarif():
-    return render_template('Ttarifs.html', base = laBase,tarifs = tarifs, contact = lecontact, my_liste = my_liste)
+    return render_template('Ttarifs.html', base = laBase,tarifs = tarifs, contact = lecontact, lestarifs = my_liste)
 
 
 @app.route("/rubrique5")
