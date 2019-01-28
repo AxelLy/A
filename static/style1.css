@@ -527,6 +527,16 @@ h5{
 .element{
     margin-bottom: 4%;
 }
+.fond{
+    padding-top: 8%;
+    padding-left: 10%;
+    background-image: url("static/images/institut/fond.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 600px;
+}
 .Instcontainer{
     background-color: white;
     height: 100%;
@@ -627,7 +637,7 @@ h5{
     background-color: #f4f4f4;
     transition: 1s
 }
-.tab input:checked ~ .tab-content {
+.tab input:checked + label + .tab-content {
     max-height: 100vh;
 }
 .tarifs{
