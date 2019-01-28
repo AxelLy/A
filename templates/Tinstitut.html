@@ -1,0 +1,52 @@
+{% extends "Tmenu.html" %}
+{% block content %}
+        <div class="titre" style="text-align: center"><h1>{{institut.titre1}}</h1></div>
+        <div style=" padding-top: 8%;
+        padding-left: 10%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 600px;
+        background-image: url('static/images/institut/{{institut.fond}}');
+        ">
+            <div class="Instcontainer">   
+                <span><img src="static/images/institut/{{institut.img1}}" alt="" ></span>
+                <span><img src="static/images/institut/{{institut.img2}}" alt="" ></span>  
+            </div>
+            <div class="texte-transparent">
+                <div style="text-align: center">
+                    <p>
+                        <strong>{{institut.texte1}}</strong>
+                    </p>
+                        <p><strong>{{institut.texte2}}</strong></p>
+                        <p>{{institut.texte3}}</p>
+                    <p>
+                        {{institut.texte4}}
+                    </p> 
+                </div>
+            </div>
+        </div>
+
+
+
+
+<h1 style="text-align: center">{{institut.titre2}}</h1>
+<div class="conteneur">
+        <div class="element"><img src="static/images/institut/{{institut.img3}}" width="220" height="160" alt=""></div>
+        <div class="element"><img src="static/images/institut/{{institut.img4}}" width="220" height="160" alt=""></div>
+        <div class="element"><img src="static/images/institut/{{institut.img5}}" width="220" height="160" alt=""></div>
+        <div class="element"><img src="static/images/institut/{{institut.img6}}" width="220" height="160" alt=""></div>  
+    </div>
+
+    <div class="contact">
+        <h1>Contactez nous !<git/h1>
+        <p><b>{{contact.nomsite}}</b></p>
+        <p><span style="font-weight: 400;">{{contact.rue}}</span></p>
+        <p><span style="font-weight: 400;">{{contact.ville}}</span></p>
+        <p><a style="color: #e55718;" href="mailto:sidonie@maquillagepermanentnice.fr">{{base.mail}}</a></p>
+        <p><a style="color: #e55718; margin-top: 7%" href="tel:0489036693">{{base.tel}}</a></p>
+        <a class="bouton" href="#"><span>Contactez-nous !</span></a>
+</div>
+
+{% endblock %}

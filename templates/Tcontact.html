@@ -1,0 +1,41 @@
+
+{% extends "Tmenu.html" %}
+{% block content %}
+
+
+                    
+                    <div class="autour">   
+        <div id="main-area">
+            <div id="area1" style="margin-top:10%">
+            <div id="text-inner">
+                <div id="titre"><h1>CONTACTEZ NOUS !</h1></div>
+                
+                <p><b>{{contact.nomsite}}</b></p>
+                <p><span style="font-weight: 400;">{{contact.rue}}</span></p>
+                <p><span style="font-weight: 400;">{{contact.ville}}</span></p>
+                <p><a style="color: #e55718;" href="mailto:sidonie@maquillagepermanentnice.fr">{{base.mail}}</a></p>
+                <p><a style="color: #e55718;" href="tel:0489036693">{{base.tel}}</a></p>
+            </div> 
+            <div id="form">
+            <form>
+                <div id="form_haut">
+                    <input type="text" name="nom" id="nom_cli" placeholder="Nom"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="email" id="mail" placeholder="Adresse mail"/>
+                </div>
+                
+                <textarea name="Message" id="msg" placeholder="Message"></textarea>
+                <div id="bouton"><button class="bouton" type="submit" id="button" style="float:right"><span>Envoi</span></button></div> 
+      
+            </form>
+           
+            </div>
+            </div>
+            <div class="lamap" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.6353193523078!2d1.3919752154576062!3d43.59331182912346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85df896e220e2382!2sVelcome+SEO+l+Agence+de+R%C3%A9f%C3%A9rencement+l+Agence+seo!5e0!3m2!1sfr!2sfr!4v1547719852429" style="border:0; width: 100%" allowfullscreen></iframe></div>
+        </div> 
+    
+    
+    
+    </div>
+
+
+    {% endblock %}

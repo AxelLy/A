@@ -1,0 +1,98 @@
+
+{% extends "Tmenu.html" %}
+{% block content %}
+         
+    <main> 
+        <article>
+            <div class="leconteneur">
+                <div class="lelogo">   
+                    <a style="font-size: 3.5vw;color:black;">{{accueil.nomEntreprise}}</a>
+                    <a style ="margin-left: 70px; font-size: 2vw; color:black">{{accueil.metier}}</a>     
+                    <img src="static/images/accueil/{{accueil.image1}}" alt="">                   
+                </div>   
+                <div class="lepinceau">
+                    <img src="static/images/accueil/{{accueil.image2}}" alt="">
+                </div>
+            </div>
+            <div style="text-align:center;margin-top: 5%; margin-bottom: 15%"> <a class="bouton"><span>{{accueil.lien1}}</span></a></div>
+        </article>           
+        <article>    
+            <div class="container">
+                <div>
+                    <img  src="static/images/accueil/{{accueil.image3}}" style="max-width:100%;" alt="">
+                </div>
+                <div class="cils-texte">
+                    <div class="titre" style="font-family: 'Open Sans'; ">
+                        {{accueil.titre1}}
+                        
+                    </div>
+                        <div class="texte" style="line-height: 29px;">
+                      {{accueil.texte}}
+                    </div>
+                </div>
+            </div>          
+            <div style="text-align: center; margin-top: 5%; padding-bottom: 5%"><a class="bouton"><span>{{accueil.lien2}}</span></a></div>
+        </article>
+          
+        <article>
+          <div class="titre" style="text-align: center;">{{accueil.titre2}}</div>
+          <div class="autour">
+            <div class="prestation-container" style="margin-top: 10%">
+                <div class="prestation-item">
+                    {{accueil.article1}}<p><img src="static/images/accueil/{{accueil.image4}}" alt=""></p>
+                </div>
+                <div class="prestation-item">
+                    {{accueil.article2}} <p><img src="static/images/accueil/{{accueil.image5}}" alt=""></p>
+                </div>
+                <div class="prestation-item">
+                    {{accueil.article3}} <p><img src="static/images/accueil/{{accueil.image6}}" alt=""></p>
+                </div>
+            </div>
+            <div class="prestation-container">
+                <div class="prestation-item">
+                    {{accueil.article4}}  <p><img src="static/images/accueil/{{accueil.image7}}" alt=""></p>
+                </div>
+                <div class="prestation-item">
+                    {{accueil.article5}} <p><img src="static/images/accueil/{{accueil.image8}}" alt=""></p>
+                </div>
+                <div class="prestation-item">
+                    {{accueil.article6}} <p><img src="static/images/accueil/{{accueil.image9}}" alt=""></p>
+                </div>
+            </div>         
+            <div style="text-align: center"><a class="bouton"><span>{{accueil.lien3}}</span></a></div>
+        </article>    
+         
+        <article>
+                <h1 style="text-align: center; margin-top: 15%"> {{accueil.titre3}}</h1>
+                    <div class="carte_row">
+                        <div>
+                            <img src="static/images/tarifs/{{accueil.image10}}" alt="" height="230" width="320"/>
+                            <p>{{accueil.article7}}</p>
+                        </div>
+                        <div>
+                            <img src="static/images/tarifs/{{accueil.image11}}" alt="" height="230" width="320"/>
+                            <p>{{accueil.article8}}</p>
+                        </div>
+                        <div>
+                            <img src="static/images/tarifs/{{accueil.image12}}" alt="" height="230" width="320"/>
+                            <p>{{accueil.article9}}</p>
+                        </div>                    
+                    </div>
+
+        </article>
+
+                <div style="text-align: center; margin-top: 10%;"><a class="bouton"><span>{{accueil.lien4}}</span></a></div>    
+        </div>
+        <div class="contact">
+            <h1>Contactez nous !</h1>
+            <p><b>{{contact.nomsite}}</b></p>
+            <p><span style="font-weight: 400;">{{contact.rue}}</span></p>
+            <p><span style="font-weight: 400;">{{contact.ville}}</span></p>
+            <p><a style="color: #e55718;" href="mailto:sidonie@maquillagepermanentnice.fr">{{base.mail}}</a></p>
+            <p><a style="color: #e55718; margin-top: 7%" href="tel:0489036693">{{base.tel}}</a></p>
+            <a class="bouton" href="#"><span>Contactez-nous !</span></a>
+    </div>
+
+
+    </main>
+    {% endblock %}

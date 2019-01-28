@@ -1,0 +1,102 @@
+
+{% extends "Tmenu.html" %}
+{% block content %}
+         
+
+          
+        <div id="titre"><div style="font-size:46px; font-family: 'Playfair Display SC',Georgia,Times New Roman,serif; text-align: center; margin-top: 10%">{{marque.titre1}}</div></div>
+
+        <div class="autour">
+
+    
+
+
+        <div style="font-size: 35px; font-family: Playfair Display SC,Georgia,Times New Roman,serif; margin-top:14%">{{marque.titre2}}</div>
+
+
+
+            <ul class="flex-container">
+                <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre1}}</p></div>
+                   <p> {{marque.texte1}}
+                </p></li>
+                <li class="flex-item"><img src="static/images/marques/{{marque.image1}}" alt=""></li>
+              
+            </ul>
+        
+
+
+
+            <div style="font-size: 35px; font-family: Playfair Display SC,Georgia,Times New Roman,serif; margin-top:14%">{{marque.titre3}}</div>
+            <ul class="flex-container">
+                <li class="flex-item"><img src="static/images/marques/{{marque.image2}}" alt=""></li>
+                <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre2}}</p></div>
+                    {{marque.texte2}} </li>                                    
+                  </ul>     
+              
+
+                  
+        <div style="font-size: 35px; font-family: Playfair Display SC,Georgia,Times New Roman,serif;margin-top:14%">{{marque.titre4}}</div>
+        <ul class="flex-container">
+            <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre3}}</p></div>
+                {{marque.texte3}}
+                </li>
+            <li class="flex-item"><img src="static/images/marques/{{marque.image3}}" alt=""></li>
+          </ul>
+
+
+          
+        <div style="font-size: 35px; font-family: Playfair Display SC,Georgia,Times New Roman,serif;margin-top:14%">{{marque.titre5}}</div>
+        <ul class="flex-container">
+            <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre4}}</p></div>
+                {{marque.texte4}}
+                </li>
+            <li class="flex-item"><img src="static/images/marques/{{marque.image4}}" style="margin-top:7%;" alt=""></li>
+          </ul>
+
+
+          <ul class="flex-container">
+                <li class="flex-item"><img src="static/images/marques/{{marque.image5}}" alt=""></li>
+                <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre5}}</p></div>
+                    {{marque.texte5}}   </li>                                    
+          </ul>  
+          
+          
+          
+    <div style="font-size: 35px; font-family: Playfair Display SC,Georgia,Times New Roman,serif;margin-top:14%">{{marque.titre6}}</div>
+    <ul class="flex-container">
+        <li class="flex-item"><img src="static/images/marques/{{marque.image6}}" style=" margin-top: 25%" alt=""></li>
+        <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre6}} </p></div>
+            {{marque.texte6}} </li>                                    
+    </ul> 
+
+
+    <ul class="flex-container">
+        <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre7}} </p></div>
+            {{marque.texte7}}
+            </li>
+        <li class="flex-item"><img src="static/images/marques/{{marque.image7}}" style="margin-top:22%;" alt=""></li>
+    </ul>
+
+
+      
+      <div style="font-size: 35px; font-family: Playfair Display SC,Georgia,Times New Roman,serif;margin-top:14%">{{marque.titre7}}</div>
+      <ul class="flex-container">
+        <li class="flex-item"><img src="static/images/marques/{{marque.image8}}" style="margin-top: 25%" alt=""></li>
+        <li class="flex-item"><div style="font-size:25px; color:black"><p>{{marque.soustitre8}}</p></div>
+            {{marque.texte8}}</li>                                    
+      </ul> 
+    </div>
+
+    
+    <div class="contact">
+            <h1>Contactez nous !</h1>
+            <p><b>{{contact.nomsite}}</b></p>
+            <p><span style="font-weight: 400;">{{contact.rue}}</span></p>
+            <p><span style="font-weight: 400;">{{contact.ville}}</span></p>
+            <p><a style="color: #e55718;" href="mailto:sidonie@maquillagepermanentnice.fr">{{base.mail}}</a></p>
+            <p><a style="color: #e55718; margin-top: 7%" href="tel:0489036693">{{base.tel}}</a></p>
+            <a class="bouton" href="#"><span>Contactez-nous !</span></a>
+    </div>
+
+    
+    {% endblock %}

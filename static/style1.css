@@ -1,0 +1,718 @@
+
+.autour{
+    width: 80%;
+    margin:auto;
+    }
+    a {
+        color: grey;
+     }
+     .haut a{color:#e55718}
+     /* header */
+     
+     .header {
+       width: 100%;
+       z-index: 999;
+     }
+     
+     .header ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       overflow: hidden;
+       background-color: #fff;
+     }
+     
+     .header .logo {
+       display: block;
+       float: left;
+       font-size: 2em;
+       padding: 10px 20px;
+       text-decoration: none;
+     }
+     
+     /* menu */
+     
+     .header .menu {
+       clear: both;
+       max-height: 0;
+       
+     }
+     
+     /* menu icon */
+     
+     .header .menu-icon {
+       cursor: pointer;
+       display: inline-block;
+       float: right;
+       padding: 28px 20px;
+       position: relative;
+       user-select: none;
+     }
+     
+     .header .menu-icon .navicon {
+       background: #333;
+       display: block;
+       height: 2px;
+       position: relative;
+       transition: background .2s ease-out;
+       width: 18px;
+     }
+     
+     .header .menu-icon .navicon:before,
+     .header .menu-icon .navicon:after {
+       background: #333;
+       content: '';
+       display: block;
+       height: 100%;
+       position: absolute;
+       transition: all .2s ease-out;
+       width: 100%;
+       
+     }
+     
+     .header .menu-icon .navicon:before {
+       top: 5px;
+     }
+     
+     .header .menu-icon .navicon:after {
+       top: -5px;
+     }
+     
+     /* menu btn */
+     
+     .header .menu-btn {
+       display: none;
+     }
+     
+     .header .menu-btn:checked ~ .menu {
+       max-height: 100%;
+       text-align: center;
+       background-color: #F0F0F0;
+       line-height: 150%;
+     }
+     
+     .header .menu-btn:checked ~ .menu-icon .navicon {
+       background: transparent;
+     }
+     
+     .header .menu-btn:checked ~ .menu-icon .navicon:before {
+       transform: rotate(-45deg);
+     }
+     
+     .header .menu-btn:checked ~ .menu-icon .navicon:after {
+       transform: rotate(45deg);
+     }
+     
+     .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+     .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+       top: 0;
+     }
+     
+     
+     
+     @media (min-width: 1052px) {
+       .header li {
+         float: left;
+       }
+       .header li a {
+         padding: 20px 30px;
+       }
+       .header .menu {
+         clear: none;
+         float: right;
+         max-height: none;
+       }
+       .header .menu-icon {
+         display: none;
+       }
+     }
+
+
+.flex-container {   
+    box-shadow: 0px 17px 71px -8px rgba(189,187,189,1);
+    margin-top:10%;
+    padding-left: 4%;
+    padding-top: 5%;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top: 8%;
+}       
+.flex-item {
+    line-height:190%;
+    width: 40%;
+    margin-top: 10px;
+    color: grey;
+    word-wrap: break-word;
+    margin-bottom: 4%;
+    font-size: 17px;
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+    padding-right: 20px;
+} 
+.flex-container img{
+  width: 100%;
+}
+.tarif{
+    background-image: linear-gradient(90deg,#f2f4f3 0%,rgba(242,244,243,0.35) 100%),
+    url(https://maquillagepermanentnice.fr/wp-content/uploads/2018/10/makeup-artist-03.jpg);
+    width: 100%;
+    height: 48%;
+    text-align: center;
+    background-color:#F1F0EF;
+    background-size:cover;
+    margin-top:10%;
+}
+ a, a:visited, a:active{
+    text-decoration:none;
+    color: grey;   
+}
+a:hover{
+    color:orangered;
+}
+hr{
+    margin-top:2%;
+    width: 100%;
+    height: 1px;
+    background-color:#F5F2EF;
+    border: none; /*on supprime le style par défaut*/
+}   
+
+
+.bouton{
+    color:#e55718;
+    font-size: 20px;
+    background-color:transparent;
+    border :2px solid;
+    border-radius:3px;
+    padding: .6em 1.2em;   
+}
+.bouton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.bouton span:after {
+    content: '\003e';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+}
+.bouton:hover span {
+    color:#eee;
+    padding-right: 25px;       
+}
+.bouton:hover{
+    background-color:#e55718; 
+}
+.bouton:hover span:after {
+    opacity: 1;
+    right: 0;
+}   
+
+
+.prestation-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+    justify-content: space-around;
+    color: orangered;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+
+.img{
+    box-shadow: 11px 10px 0px 0px rgba(201,201,201,1);
+}
+.yeux-item{
+    width:275px;
+    color: grey;
+    margin-bottom: 4%;
+}
+.yeux-texte{
+    line-height:140%;
+    width:70%;
+    color: grey;
+    word-wrap: break-word;
+    margin-left: 0;
+    margin-bottom: 4%;
+    font-size: 17px;
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+    padding-right: 20px;
+}
+.teinture-item{
+    width:275px;
+    color: grey;
+}
+.teinture-texte{
+    line-height:140%;
+    width: 65%;
+    color: grey;
+    word-wrap: break-word;
+    margin-left: -50px;
+    margin-bottom: 4%;
+    font-size: 17px;
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+    padding-right:10px;
+}
+
+
+
+.texte{
+    margin-top:1%;
+    font-family: "Times New Roman";
+    font-size:18px;
+    color:grey;  
+    line-height: 23px;
+}
+.titre{
+    FONT-size: 22px;
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+    padding-bottom: 10px;
+    color: #333;
+    text-align: center;
+    margin-top : 10%;
+    word-wrap: break-word;
+}
+
+body{
+    color: #666;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 14px;
+    }
+    p{
+        font-weight: 400;
+    }
+    h1,h4,h2,h3{
+        font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+        font-weight: 500;
+        color: #333;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .row9 h3,.row10 h3,.row11 h3,.row12 h3{
+        text-align: left;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+    .row1 img,.row2 img,.row3 img,.row4 img,.RowI img,.row7 img{
+        box-shadow: 11px 10px 0px 0px rgba(201,201,201,1);
+    }
+    .main-content{
+        width: 73%;
+        margin:auto;
+    }
+    .conteneur1,.conteneur2,.conteneur3,.conteneur4,.contact{
+        text-align: center;
+    }
+    .row4{
+        text-align: left;
+    }
+    .row4 ul{
+        padding-left: 20px;
+    }
+    .rowB{
+        padding: 10%;
+    }
+    .row1,.row2,.row3,.row4,.row7,.row8,.row10,.row11,.row12,.row6{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 2%;
+    }
+    .colonne1,.colonne8,.colonne14{
+        width: 55%;
+        font-size: 19px;
+        text-align: left;
+        justify-self: center;
+        margin:auto;
+        flex-basis: 600px;    
+    }
+    .colonne6,.colonne11{
+        margin:auto;
+        font-size: 19px;
+    }
+    .colonne7,.colonne13{
+        align-self:center;
+        font-size: 19px;
+    }
+    .colonne2{
+        font-size:19px;
+        width: 70%;
+        flex-basis: 600px;
+        
+    }
+    .colonne3{
+        margin:auto;
+    }
+    .row5,.row9{
+        text-align: left;
+        font-size: 19px;
+    }
+    .row6{
+        text-align: left;
+    }
+    .colonne4,.colonne12{
+        text-align: left;
+        font-size:14px;
+        width: 55%;
+        flex-basis: 600px;
+    }
+
+    .contact p{
+        font-size: 16px;
+    }
+    .footer{
+        height: 55px;
+        width: 100%;
+        color:white;
+    }
+    .msgfooter div {
+        display: inline-block;
+    }
+    img{
+        max-width: 100%;
+    }
+
+#main-area{
+    margin:auto;
+    font-size: 100%;
+    color: #666;
+    background-color: #fff;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.7em;
+    box-sizing: border-box;
+    display : flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;  
+}
+
+#text-inner{
+    text-align: center;
+}
+form{
+    margin:auto;
+    width: 100%;
+    display : flex;
+    flex-direction: column;                   
+}
+#form_haut{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;         
+}
+#nom_cli,#mail{
+    padding:16px;
+    font-size: 14px;
+    font-weight: 400;
+    width :48%;
+    background-color: #eee;
+    border:0px;
+}
+#msg{
+    min-height: 150px;
+    background-color: #eee;
+    border:0px;
+    margin-bottom: 3%;
+}
+.footer{
+    height: 55px;
+    width: 100%;
+    color:white;
+}
+.msgfooter div {
+    display: inline-block;
+}
+.lelogo{
+    width: 22%;
+    padding-left: 14%;
+    padding-top: 6%;
+    margin-top:7%;
+}
+.lelogo img{
+    height: 27%;
+    width: 90%;
+}
+.leconteneur{
+    overflow:hidden;
+    height: 90%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lepinceau{
+    width: 63%;
+}
+.lepinceau img{
+    width: 100%;
+}
+
+
+.carte_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size:25px;
+    font-family:'Playfair Display SC',Georgia,"Times New Roman",serif;
+}
+
+.tarifs{
+    box-shadow: 10px 21px 33px 7px rgba(222,222,222,1);
+    padding-bottom: 8%;
+    border:20px solid white;
+    margin-top: 5%;
+}
+.titres{
+    margin-left:10%;
+}
+h5{
+    color:#e55718;
+}
+.onglerie,.beaute,.maquillage,.visage,.corps,.epilation{
+    margin-left:10%;
+    margin-right: 10%;
+    font-family: "Open Sans",Arial,sans-serif;   
+}
+.epilation .forfaits{
+    margin-bottom: 4.75%;
+}
+
+.lelogo img{
+    height: 27%;
+    width: 90%;
+}
+.lepinceau img{
+    width: 100%;
+}
+
+.epilation .forfaits{
+    margin-bottom: 4.75%;
+}
+.beaute_PM,.prothesie,.deco,.maquillage_miss,.regard,.levre,.sourcil,.yeux,.retouche,.pause_C,.pause_S,.relax,.energie,.fermerte,.les_tarifs,.forfaits{
+    border: 1px solid lightgrey;
+    word-wrap: break-word;
+    margin-bottom: 2.75%;
+} 
+
+.placement_img{
+    border-width: 24px;
+    border-color: #ffffff;
+}
+.conteneur{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin:auto;
+}
+.element{
+    margin-bottom: 4%;
+}
+.Instcontainer{
+    background-color: white;
+    height: 100%;
+    width: 69%;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;  
+}
+.Instcontainer span{
+    padding: 3%;
+    padding-bottom: 0%;
+}
+.Instcontainer img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.texte-transparent{
+    position:absolute;
+    background-color:#F9F9F9;
+    width: 38%;
+    height: 60%;
+    margin-left: 55%;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.815);
+    font-size: 21px;
+    padding-bottom: 5px;
+    border:0px solid white;
+    word-wrap: break-word;
+}
+
+.tarifs{
+    box-shadow: 10px 21px 33px 7px rgba(222,222,222,1);
+    padding-bottom: 8%;
+    border:20px solid white;
+}
+.titres{
+    margin-left:10%;
+}
+h5{
+    color:#e55718;
+}
+.contact{
+    text-align: center;   
+    font-family: 'Playfair Display SC',Georgia,"Times New Roman",serif;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+
+.cils-texte{
+    box-shadow: 4px 4px 25px -3px rgba(186,179,186,1);
+    margin-top: 1%;
+    width: 30%;
+    height: 50%;
+    padding: 1.5%;
+    word-wrap: break-word; 
+}
+
+.container {
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tab input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab label {
+    color:#e55718;
+    position: relative;
+    display: block;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-weight: bold;
+    border: 1px solid #d9d9d9;
+}
+.tab input[type=checkbox] + label::before {
+    position: absolute;
+    color: #e54623;
+    right: 0;
+    left: 95%;
+    content: "+";
+    
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    transition: 1s
+}
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+.tarifs{
+    width: 80%;
+    margin:auto;
+   
+}
+.main{
+    width: 80%;
+    margin:auto;
+    border:2px solid green;
+}
+.tab{
+    margin-bottom: 3%;
+}
+
+
+
+.lamap{
+    margin-left: 50px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width:1138px) {
+    #main-area{
+         width: 100%;
+    }
+    #area1, .lamap{
+        margin:auto;
+        padding-top: 5%;
+    }
+}
+
+.texte-transparent{
+    position: absolute;
+    background-color:#F9F9F9;
+    width: 38%;
+    margin-left: 45%;
+    height: auto;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.815);
+    font-size: 19px;
+    padding: 5px;
+    padding-bottom: 28px;
+    
+}
+
+
+        @media only screen and (max-width:1242px) {
+            .flex-item{
+             width: auto;
+             margin: auto;
+             padding-bottom: 5%;
+             }
+             .flex-item img{
+                 margin-top: 15%;
+                 margin-bottom: 10%;
+             }
+} 
+
+@media only screen and (max-width:980px){
+    .texte-transparent{
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+    }
+    .prestation-item{
+        width: 100%;
+        display: block;
+        margin-top: 15%;
+        }
+        .carte_row img{
+            width: 68%;
+            height: auto;
+        }
+}
+
+@media only screen and (max-width:1187px) {
+    .container{
+        width: 100%;
+        justify-content: space-around;
+    }
+.cils-texte{
+    margin-top: 2%;
+    margin-bottom: 5%;
+        width: 100%;
+    }
+}

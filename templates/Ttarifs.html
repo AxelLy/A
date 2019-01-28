@@ -1,0 +1,63 @@
+{% extends "Tmenu.html" %}
+{% block content %}
+    <div class="tarif">
+       <h1>{{tarifs.titre1}}</h1>
+    </div> 
+
+    <div class="autour" style="margin-top:15%">
+        <div style="text-align: center"><h1>{{tarifs.titre2}}</h1></div>
+        <div class="carte_row">
+            <div>
+                <img src="static/images/tarifs/{{tarifs.img1}}" height="230" width="320" alt=""/>
+                <p>{{tarifs.texte1}}</p>
+            </div>
+            <div>
+                <img src="static/images/tarifs/{{tarifs.img2}}" height="230" width="320" alt=""/>
+                <p>{{tarifs.texte2}}</p>
+            </div>
+            <div>
+                <img src="static/images/tarifs/{{tarifs.img3}}" height="230" width="320" alt=""/>
+                <p>{{tarifs.texte3}}</p>
+            </div>                    
+        </div>
+
+
+        <div class ="tarifs">
+            {% for p in my_list3%}
+            <div class="onglerie">
+                
+                <h2>{{p}}</h2>
+                {% for m in my_list2 %}
+                <div class="tab">
+                    <input id="{{m}}" type="checkbox" name="tabs">
+                    <label for="{{m}}">{{m}}</label>
+                    <div class="tab-content"> 
+                        {% for key, value in dico.items() %}
+                        <p>{{value}}</p>
+                        {% endfor %}
+                        
+                        
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+
+                
+        <div style="text-align: center; margin-top: 12%;"><a class="bouton" href="#" style="padding: 2%;"><span>{{tarifs.bouton1}}</span></a></div>
+    </div>        
+                
+        </div>
+       
+       
+        <div class="contact">
+            <h1>Contactez nous !</h1>
+            <p><b>{{contact.nomsite}}</b></p>
+            <p><span style="font-weight: 400;">{{contact.rue}}</span></p>
+            <p><span style="font-weight: 400;">{{contact.ville}}</span></p>
+            <p><a style="color: #e55718;" href="mailto:sidonie@maquillagepermanentnice.fr">{{base.mail}}</a></p>
+            <p><a style="color: #e55718; margin-top: 7%" href="tel:0489036693">{{base.tel}}</a></p>
+            <a class="bouton" href="#"><span>Contactez-nous !</span></a>
+    </div>
+
+{% endblock %}

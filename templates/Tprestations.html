@@ -1,0 +1,133 @@
+
+{% extends "Tmenu.html" %}
+{% block content %}
+
+    <div class="main-content">
+        <div class="conteneur1">
+            <div class="titre"><h1>{{prestations.titre1}}</h1></div>
+            <div class="row1">
+                <div class = "break">
+                    <h4>{{prestations.article1}}</h4>
+                    <img src="static/images/prestations/{{prestations.image1}}" height="230" width="320" alt=""/>
+                </div>
+                <div clasS="detente">
+                    <h4>{{prestations.article2}} </h4>
+                    <img src="static/images/prestations/{{prestations.image2}}" height="230" width="320" alt=""/>
+                </div>
+                <div class="escale">
+                    <h4>{{prestations.article3}}</h4>
+                    <img src="static/images/prestations/{{prestations.image3}}" height="230" width="320" alt=""/>  
+                </div>
+            </div>
+            <div class="row2">
+                <div class="a">
+                    <h4>{{prestations.article4}}</h4>
+                    <img src="static/images/prestations/{{prestations.image4}}" height="230" width="320" class="img" alt="">
+                </div>  
+                <div class="b">
+                    <h4>{{prestations.article5}}</h4>
+                    <img src="static/images/prestations/{{prestations.image5}}" height="230" width="320" class="img" alt="">
+                </div> 
+                <div class="c">
+                    <h4>{{prestations.article6}}</h4>
+                    <img src="static/images/prestations/{{prestations.image6}}" height="230" width="320" class="img" alt="">
+                </div>                
+            </div>
+            <div class="rowB"><a class="bouton"><span>{{prestations.lien1}}</span></a></div>
+        </div>         
+        <div class="conteneur2">
+            <h2>{{prestations.titre2}}</h2> 
+            <div class="row3">
+                <div class="colonne"><img src="static/images/prestations/{{prestations.image7}}" class="img" alt=""></div>
+                <div class="colonne1">
+                <p>{{prestations.texte1}}</p>
+                </div>
+            </div>
+        
+            <div class="row4">
+                <div class="colonne2">
+                        <p>{{prestations.texte2}}</p>
+                </div>
+                <div class="colonne3"><img src="static/images/prestations/{{prestations.image8}}" class="img" alt=""></div>                                
+            </div>                                      
+            <div class="row5"> 
+                <p>{{prestations.texte3}}</p>
+            </div>
+            <div class="rowB"><a class="bouton"><span>{{prestations.lien2}}</span></a></div>
+        </div>
+        <div class="conteneur3">         
+            <h2>{{prestations.titre3}}</h2>     
+            <div class="RowI"><img src="static/images/prestations/{{prestations.image9}}" class="img" alt=""></div>
+            <h3>{{prestations.soustitre1}}</h3>
+            <div class="row6">
+                <p>{{prestations.texte4}}</p>
+            </div>
+        
+            
+                
+                                
+            <div class="row3">
+                <div class="colonne"><img src="static/images/prestations/{{prestations.image10}}" class="img" alt=""></div>
+                <div class="colonne1"> 
+                    <h2><strong>{{prestations.soustitre2}}</strong></h2>
+                    <p>{{prestations.texte5}}</p>
+                </div>
+            </div>
+        
+
+            <div class="row7">
+                <div class="colonne4">
+                    <h2><strong>{{prestations.soustitre3}}</strong></h2>   
+                    <p>{{prestations.texte6}}</p>
+                </div> 
+                <div class="colonne3">
+                    <img src="static/images/prestations/{{prestations.image11}}" class="img" alt="">
+                </div>
+            </div>
+            <div class="rowB"><a class="bouton"><span>{{prestations.lien3}}</span></a></div>              
+        </div>
+            
+        <div class="conteneur4">
+            <h2>{{prestations.soustitre4}}</h2>
+            <div class="row8"> 
+                <div class="colonne5"><img src="static/images/prestations/{{prestations.image12}}" alt=""></div>
+                <div class="colonne6"><img src="static/images/prestations/{{prestations.image13}}" alt=""></div>
+            </div>
+            <div class="row9">
+                <h3>{{prestations.soustitre5}}</h3>
+                <p>{{prestations.texte7}}</p>
+            </div>
+            <div class="row10">
+                <div class="colonne7"><img src="static/images/prestations/{{prestations.image14}}" width="305" alt=""></div>
+                <div class="colonne8">
+                    <h3>{{prestations.soustitre6}}</h3> 
+                    <p>{{prestations.texte8}}</p>
+                </div>
+            </div> 
+            <div class="row11">    
+                <div class="colonne12"> 
+                    <h3>{{prestations.soustitre7}}</h3>
+                    <p>{{prestations.texte9}}</p>
+                </div>
+                <div class="colonne11"><img src="static/images/prestations/{{prestations.image15}}" width="305" style="margin-top: 15%" alt=""></div>               
+            </div>   
+            <div class="row12">
+                <div class="colonne13"><img src="static/images/prestations/{{prestations.image16}}" alt=""></div>
+                <div class="colonne14">
+                    <h3>{{prestations.soustitre8}}</h3>
+                    <p> {{prestations.texte10}}</p>
+                </div>
+            </div> 
+        </div>
+        <div class="contact">
+            <h1>Contactez nous !</h1>
+            <p><b>{{contact.nomsite}}</b></p>
+            <p><span style="font-weight: 400;">{{contact.rue}}</span></p>
+            <p><span style="font-weight: 400;">{{contact.ville}}</span></p>
+            <p><a style="color: #e55718;" href="mailto:sidonie@maquillagepermanentnice.fr">{{base.mail}}</a></p>
+            <p><a style="color: #e55718; margin-top: 7%" href="tel:0489036693">{{base.tel}}</a></p>
+            <a class="bouton" href="#"><span>Contactez-nous !</span></a>
+     </div>
+    </div>
+        
+    {% endblock %}

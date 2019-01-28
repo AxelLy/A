@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+        
+
+<head>
+        <title>accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+
+</head>
+  
+<body>
+    <header class="header">
+        <div class="autour">
+            <div class="haut">
+                <a><span>&#9742;</span>&nbsp;{{base.tel}}</a>
+                <a><span>&#9993;</span>&nbsp;{{base.mail}}</a>
+                <a><strong><span style="font-size:20px">f</span></strong></a>
+            </div>
+            <a href="" class="logo"><img src="static/images/{{base.image}}" alt="" height="65" width="117"/></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu" style="padding-top:2%">
+                <li><a href="/rubrique1">{{base.rub1}}</a></li>
+                <li><a href="/rubrique2">{{base.rub2}}</a></li>
+                <li><a href="/rubrique3">{{base.rub3}}</a></li>
+                <li><a href="/rubrique4">{{base.rub4}}</a></li>
+                <li><a href="/rubrique5">{{base.rub5}}</a></li>
+                <li><a href="/rubrique6">{{base.rub6}}</a></li>
+            </ul>
+        </div>
+        <hr> 
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer" style="background-color:#C5C5C5">
+            <div class="autour">
+                    <div class="msgfooter">
+                            <div><p>Contact</p></div>
+                            <div><p style="margin-left:16px">Mentions légales</p></div>
+                            <div><p style="margin-left:16px">Plan du site</p></div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="footer" style="background-color:#ACACAC">
+                <div class="autour">
+                    {{base.nomEntreprise}} | Tous droits réservés.
+                </div>
+        </div> 
+    </footer>
