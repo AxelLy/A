@@ -1,5 +1,4 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+
 
 laBase = {'tel' :'Tel Entreprise', 'mail': 'Mail Entreprise', 
 'rub1' : 'rubrique1', 'rub2': 'rubrique2', 'rub3':'rubrique3', 'rub4':'rubrique4', 'rub5':'rubrique5', 'rub6':'rubrique6',
